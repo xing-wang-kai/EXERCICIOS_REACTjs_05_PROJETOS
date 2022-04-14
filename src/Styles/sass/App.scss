@@ -1,0 +1,80 @@
+$color-primary: #F0ECE3;
+$color-secondary: #DFD3C3;
+$color-terciary: #C7B198;
+$color-letter: #483434;
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $color-primary;
+
+    color: $color-letter;
+
+    font-family: cursive;
+
+    margin: 40px auto;
+
+    width: 940px;
+    &-Creat-note{
+        background-color: $color-secondary;
+
+        border-radius: 3rem 0 0 0;
+        padding: 1rem;
+
+        width: 30%;
+        .Create-note-input{
+            
+
+            background-color: $color-terciary;
+
+            border: none;
+            border-radius: 5px;
+
+            font-family: cursive;
+            color: $color-secondary;
+
+            margin: 0.5rem;
+            padding: 0.5rem;
+
+            width: 90%;
+            
+            &:hover{
+                background-color: $color-letter;
+                border: none;
+            }
+            &:focus{
+                box-shadow: 0 0 0 0;
+                outline: 0;
+            }
+        }
+        
+        .Create-note-button{
+            background-color: $color-letter;
+            border: none;
+            border-radius: 0.5rem;
+
+            color: $color-secondary;
+
+            font-family: cursive;
+            font-size: 1.2em;
+
+            margin-left: 50%;
+
+            padding: 0.3em;
+            width: 50%;
+            
+            &:hover{
+                background-color: $color-secondary;
+                border: 0.1rem solid $color-letter;
+                color: $color-letter;
+            }
+            
+        }
+
+    }
+    &-Render-note{
+        width: 60%;
+        
+    }
+}
